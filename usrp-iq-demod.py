@@ -3,7 +3,7 @@ from scipy.signal import resample_poly, firwin, bilinear, lfilter
 import matplotlib.pyplot as plt
 from scipy.io import wavfile
 
-src_fname = '2024-09-10_sn10000000_cf92500000.0_sr250000.0_rg50.iq'
+src_fname = 'samples/2024-09-10_sn10000000_cf92500000.0_sr250000.0_rg50.iq'
 x = np.fromfile(src_fname, dtype=np.complex64)
 
 sample_rate = 250e3 # 보통 FM station 은 250 kHz bandwidth 을 쓰고, 그래서 sampling rate 도 bandwidth 에 맞게 250 kHz 를 쓴다고 한다.
